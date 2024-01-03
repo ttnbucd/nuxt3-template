@@ -1,0 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  @include mq(lg) {
+    font-size: var(--font-size-xs); // 16px
+  }
+  font-family: "Roboto", "Noto Sans JP", sans-serif;
+  letter-spacing: 0.05em;
+  font-size: var(--font-size-md); // 16px
+  color: var(--color-neutral-400);
+}

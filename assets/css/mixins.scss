@@ -1,0 +1,31 @@
+$breakpoints: (
+  "xs": "screen and (min-width: 0px)",
+  "sm": "screen and (min-width: 576px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: 992px)",
+  "xl": "screen and (min-width: 1200px)",
+  "xxl": "screen and (min-width: 1440px)",
+  "xxxl": "screen and (min-width: 1600px)",
+) !default;
+
+@mixin mq($breakpoint: xs) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@function desktop-px($number) {
+  @if $number > 0 {
+    @return min(calc($number / 1440 * 100vw), calc($number * 1px));
+  } @else {
+    @return max(calc($number / 1440 * 100vw), calc($number * 1px));
+  }
+}
+
+@function mobile-px($number) {
+  @if $number > 0 {
+    @return max(calc($number / 375 * 100vw), calc($number * 1px));
+  } @else {
+    @return min(calc($number / 375 * 100vw), calc($number * 1px));
+  }
+}

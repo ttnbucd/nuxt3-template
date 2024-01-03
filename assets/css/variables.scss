@@ -1,0 +1,83 @@
+:root {
+  /** content-max-width */
+  --content-max-width: 1024px;
+
+  /** radius */
+  @include mq(lg) {
+    --radius-lg: min(calc(40 / 1440 * 100vw), calc(40 * 1px));
+    --radius-md: min(calc(12 / 1440 * 100vw), calc(12 * 1px));
+    --radius-sm: min(calc(10 / 1440 * 100vw), calc(10 * 1px));
+    --radius-2xs: min(calc(4 / 1440 * 100vw), calc(4 * 1px));
+  }
+  --radius-lg: max(calc(20 / 375 * 100vw), calc(20 * 1px));
+  --radius-md: max(calc(12 / 375 * 100vw), calc(12 * 1px));
+  --radius-sm: max(calc(10 / 375 * 100vw), calc(10 * 1px));
+  --radius-2xs: max(calc(4 / 375 * 100vw), calc(4 * 1px));
+
+  /** font-size */
+  @include mq(lg) {
+    --font-size-4xl: min(calc(48 / 1440 * 100vw), calc(48 * 1px));
+    --font-size-3xl: min(calc(35 / 1440 * 100vw), calc(35 * 1px));
+    --font-size-2xl: min(calc(30 / 1440 * 100vw), calc(30 * 1px));
+    --font-size-xl: min(calc(28 / 1440 * 100vw), calc(28 * 1px));
+    --font-size-lg: min(calc(24 / 1440 * 100vw), calc(24 * 1px));
+    --font-size-md: min(calc(20 / 1440 * 100vw), calc(20 * 1px));
+    --font-size-sm: min(calc(18 / 1440 * 100vw), calc(18 * 1px));
+    --font-size-xs: min(calc(16 / 1440 * 100vw), calc(16 * 1px));
+    --font-size-2xs: min(calc(14 / 1440 * 100vw), calc(14 * 1px));
+    --font-size-3xs: min(calc(12 / 1440 * 100vw), calc(12 * 1px));
+  }
+  --font-size-4xl: max(calc(28 / 375 * 100vw), calc(28 * 1px));
+  --font-size-3xl: max(calc(26 / 375 * 100vw), calc(26 * 1px));
+  --font-size-2xl: max(calc(24 / 375 * 100vw), calc(24 * 1px));
+  --font-size-xl: max(calc(20 / 375 * 100vw), calc(20 * 1px));
+  --font-size-lg: max(calc(18 / 375 * 100vw), calc(18 * 1px));
+  --font-size-md: max(calc(16 / 375 * 100vw), calc(16 * 1px));
+  --font-size-sm: max(calc(15 / 375 * 100vw), calc(15 * 1px));
+  --font-size-xs: max(calc(14 / 375 * 100vw), calc(14 * 1px));
+  --font-size-2xs: max(calc(12 / 375 * 100vw), calc(12 * 1px));
+  --font-size-3xs: max(calc(10 / 375 * 100vw), calc(10 * 1px));
+
+  /** space */
+  @include mq(lg) {
+    --space-3xl: min(calc(60 / 1440 * 100vw), calc(60 * 1px));
+    --space-2xl: min(calc(45 / 1440 * 100vw), calc(45 * 1px));
+    --space-xl: min(calc(30 / 1440 * 100vw), calc(30 * 1px));
+    --space-lg: min(calc(25 / 1440 * 100vw), calc(25 * 1px));
+    --space-md: min(calc(20 / 1440 * 100vw), calc(20 * 1px));
+    --space-sm: min(calc(15 / 1440 * 100vw), calc(15 * 1px));
+    --space-xs: min(calc(10 / 1440 * 100vw), calc(10 * 1px));
+    --space-2xs: min(calc(6 / 1440 * 100vw), calc(6 * 1px));
+  }
+  --space-3xl: max(calc(50 / 375 * 100vw), calc(50 * 1px));
+  --space-2xl: max(calc(45 / 375 * 100vw), calc(45 * 1px));
+  --space-xl: max(calc(30 / 375 * 100vw), calc(30 * 1px));
+  --space-lg: max(calc(25 / 375 * 100vw), calc(25 * 1px));
+  --space-md: max(calc(20 / 375 * 100vw), calc(20 * 1px));
+  --space-sm: max(calc(15 / 375 * 100vw), calc(15 * 1px));
+  --space-xs: max(calc(10 / 375 * 100vw), calc(10 * 1px));
+  --space-2xs: max(calc(6 / 375 * 100vw), calc(6 * 1px));
+
+  /** color */
+  --color-neutral-400: #fff;
+  --color-primary-400: #fff;
+  --color-secondary-400: #fff;
+  --color-accent-400: #fff;
+
+  --color-darken-015: rgba(0, 0, 0, 0.15);
+  --color-darken-050: rgba(0, 0, 0, 0.5);
+
+  /** z-index */
+  --z-index-3xl: 9999;
+  --z-index-2xl: 999;
+  --z-index-xl: 99;
+  --z-index-lg: 10;
+  --z-index-md: 2;
+  --z-index-sm: 1;
+
+  /** box-shadow */
+  --shadow-center-001: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  --shadow-center-002: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+  --shadow-right-bottom-001: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+  --shadow-right-bottom-002: 4px 4px 6px 0 rgba(0, 0, 0, 0.25);
+}
